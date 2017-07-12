@@ -29,35 +29,32 @@ class NavDrawer extends Component {
           <Menu />
         </FloatingActionButton>
         <Drawer
-          open={this.state.open}
-        >
-          <div
-            style={
-              {
-                height: '200px',
-                width: '100%',
-                backgroundColor: 'salmon'
-              }
-            }>
-            Login
-          </div>
-          <Divider/>
-          <Link
-            to={'/'}>
-            <MenuItem
-              primaryText={'Play'}
-              onTouchTap={this.toggle}
-            />
-          </Link>
-
-          <Link
-            to={'/profile'}>
-
-            <MenuItem
-              primaryText={'Profile'}
-              onTouchTap={this.toggle}
-            />
-          </Link>
+          open={this.state.open}>
+            <div
+              style={
+                {
+                  height: '200px',
+                  width: '100%',
+                  backgroundColor: 'salmon'
+                }
+              }>
+                Login
+            </div>
+            <Divider/>
+            <Link
+              to={'/'}>
+                <MenuItem
+                  primaryText={'Play'}
+                  onTouchTap={this.toggle}
+                />
+            </Link>
+            <Link
+              to={'/profile'}>
+                <MenuItem
+                  primaryText={'Profile'}
+                  onTouchTap={this.toggle}
+                />
+            </Link>
         </Drawer>
       </div>
     )
