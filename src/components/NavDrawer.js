@@ -2,13 +2,14 @@ import React, {Component} from 'react'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import Divider from 'material-ui/Divider'
-import FloatingActionButton from 'material-ui/FloatingActionButton'
-import Menu from 'material-ui/svg-icons/navigation/menu'
+
 import {Link} from 'react-router'
+import {NavToggleButton} from '../styled/NavDrawer'
 
 class NavDrawer extends Component {
   state={
-    open:false
+    open:false,
+    width:250
   }
 
   toggle=()=>{
@@ -23,13 +24,14 @@ class NavDrawer extends Component {
 
     return(
       <div>
-        <FloatingActionButton
-          onTouchTap={this.toggle}
-        >
-          <Menu />
-        </FloatingActionButton>
+        <NavToggleButton
+          toggle={this.toggle}
+          width={this.state.width}
+          open={this.state.open}
+        />
         <Drawer
-          open={this.state.open}>
+          open={this.state.open}
+          width={this.state.width}>
             <div
               style={
                 {
