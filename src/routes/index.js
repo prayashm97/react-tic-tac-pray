@@ -1,18 +1,18 @@
 import React from 'react';
 import {Route, IndexRoute} from 'react-router';
 import Template from '../containers/Template'
-import Home from '../containers/Home'
+import TicTacPray from '../containers/TicTacPray'
 import Profile from '../containers/Profile'
 
 
-const creatRoutes = () => {
+const createRoutes = () => {
   return(
     <Route
       path='/'
       component={Template}
     >
       <IndexRoute
-        component={Home}
+        component={TicTacPray}
       />
       <Route
         path={'/profile'}
@@ -22,6 +22,6 @@ const creatRoutes = () => {
   )
 }
 
-const Routes = creatRoutes();
+const Routes = createRoutes();
 
 export default Routes;
