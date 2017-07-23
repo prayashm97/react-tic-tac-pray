@@ -4,7 +4,7 @@ import {media} from '../utils/media'
 
 export const Header = styled.header`
   text-align:center;
-  font-size: 5em;
+  font-size: 4em;
   font-face: 'Raleway', 'Ubuntu';
   padding-bottom: 15px;
 `
