@@ -4,8 +4,9 @@ import {media} from '../utils/media'
 
 export const Header = styled.header`
   text-align:center;
-  font-size: 2em;
-  font-face: 'Roboto', sans-serif;
+  font-size: 5em;
+  font-face: 'Raleway', 'Ubuntu';
+  padding-bottom: 15px;
 `
 
 export const Container = styled.div`
@@ -22,8 +23,10 @@ export const Container = styled.div`
 
 export const Main = (props) =>{
   return (
-    <Container>
-      {props.children}
-    </Container>
+    <div>
+      <Container>
+        {props.children}
+      </Container>
+    </div>
   )
 }

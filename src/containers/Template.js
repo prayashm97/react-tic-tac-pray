@@ -12,7 +12,9 @@ class Template extends Component {
       <MuiThemeProvider>
         <div>
           <NavDrawer />
-          <Header/>
+          <Header>
+            TicTacPray
+          </Header>
           <Main>
             {this.props.children}
           </Main>
