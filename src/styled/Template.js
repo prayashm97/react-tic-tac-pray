@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import {media} from '../utils/media'
 
 export const Header = styled.header`
-  text-align:center;
-  font-size: 4em;
-  font-face: 'Raleway', 'Ubuntu';
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Roboto', sans-serif;
   padding-bottom: 15px;
 `
+
 
 export const Container = styled.div`
   display: flex;
